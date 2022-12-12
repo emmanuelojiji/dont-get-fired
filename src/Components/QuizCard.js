@@ -1,6 +1,7 @@
 import "./QuizCard.scss";
 
 const QuizCard = ({
+  title,
   question,
   optionOne,
   optionOneClicked,
@@ -9,10 +10,13 @@ const QuizCard = ({
 }) => {
   return (
     <div className="QuizCard">
-      <h1>{question}</h1>
+      <h1 className="title">{title}</h1>
+      <p>{question}</p>
 
-      <p onClick={optionOneClicked}>{optionOne}</p>
-      <p onClick={optionTwoClicked}>{optionTwo}</p>
+      <div className="option-container">
+        <p onClick={optionOneClicked}>{optionOne}</p>
+        <p onClick={optionTwoClicked}>{optionTwo}</p>
+      </div>
     </div>
   );
 };

@@ -20,7 +20,8 @@ const Quiz = () => {
     <div className="Quiz">
       {currentQuestion ? (
         <QuizCard
-          question="Question 1"
+          title="The Grammys"
+          question="Tomorrow is the biggest award show of the year. Burna Boy needs an opinion on whether to drink a smoothie or have a heavy breakfast."
           optionOne="Right answer"
           optionOneClicked={nextQuestion}
           optionTwo="Wrong answer"
