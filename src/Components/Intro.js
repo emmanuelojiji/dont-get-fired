@@ -4,18 +4,19 @@ import Typewriter from "typewriter-effect";
 
 const Intro = () => {
   return (
-    <>
-      <h1>Intro</h1>
-      <Typewriter
-        options={{
-          strings:
-            "You got the job! You've been hired as Burna Boy's new personal assistant. He'll need you to make important decisions for him. Good luck and don't get fired!",
+    <div className="Intro">
+      <div className="bubble">
+        <Typewriter
+          options={{
+            strings:
+              "Hey, it's Burna✊. Well done for landing the job. You start today, good luck and don't get fired!",
 
-          autoStart: true,
-        }}
-      />
+            autoStart: true,
+          }}
+        />
+      </div>
       <Link to="/start">Start</Link>
-    </>
+    </div>
   );
 };
 
