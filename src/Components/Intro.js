@@ -10,7 +10,7 @@ const Intro = () => {
   useEffect(() => {
     setTimeout(() => {
       setImageSlide(true);
-    }, 8500);
+    }, 10650);
   });
   return (
     <div className="Intro">
@@ -18,7 +18,7 @@ const Intro = () => {
         <Typewriter
           options={{
             strings:
-              "Hey, it's Burna✊. Well done for landing the job. You start today, good luck and don't get fired!",
+              "Hey, it's Burna✊. Well done for landing the job as my personal assistant. You start today, good luck and don't get fired!",
             autoStart: true,
             delay: 80,
           }}
