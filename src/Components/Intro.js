@@ -25,7 +25,7 @@ const Intro = () => {
         />
       </div>
       {imageSlide && <img src={selfie} />}
-      <Link to="/start">Start</Link>
+     
     </div>
   );
 };

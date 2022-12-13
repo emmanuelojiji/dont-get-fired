@@ -1,11 +1,20 @@
+@import "../global.scss";
+
 .LandingPage {
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background: $red;
+
+  h1 {
+    color: white;
+    font-size: 40px;
+    text-transform: uppercase;
+  }
 }
 
-a{
-    font-size: 30px;
+a {
+  font-size: 30px;
 }

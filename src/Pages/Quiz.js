@@ -1,10 +1,20 @@
 import "./Quiz.scss";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import QuizCard from "../Components/QuizCard";
 import { Link } from "react-router-dom";
+import Intro from "../Components/Intro";
 
 const Quiz = () => {
-  const [currentQuestion, setCurrentQuestion] = useState(1);
+  const [introVisible, setIntroVisible] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setIntroVisible(false);
+      setCurrentQuestion(1);
+    }, 12000);
+  });
+
+  const [currentQuestion, setCurrentQuestion] = useState();
 
   const nextQuestion = () => {
     setCurrentQuestion++;
@@ -12,13 +22,14 @@ const Quiz = () => {
   };
 
   const showFiredScreen = () => {
-    setCurrentQuestion();
+    setCurrentQuestion("");
     console.log("Wrong!");
   };
 
   return (
     <div className="Quiz">
-      {currentQuestion ? (
+      {introVisible && <Intro />}
+      {currentQuestion && (
         <QuizCard
           title="The Grammys"
           question="Tomorrow is the biggest award show of the year. Burna Boy needs an opinion on whether to drink a smoothie or have a heavy breakfast."
@@ -27,9 +38,11 @@ const Quiz = () => {
           optionTwo="Wrong answer"
           optionTwoClicked={showFiredScreen}
         />
-      ) : (
+      )}
+
+      {currentQuestion === "" && (
         <>
-          <h1>YOU'FRE FIRED!</h1>
+          <h1>YOU'RE FIRED!</h1>
           <p
             onClick={() => {
               setCurrentQuestion(1);
