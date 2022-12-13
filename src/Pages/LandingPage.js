@@ -8,11 +8,7 @@ const LandingPage = () => {
 
   return (
     <div className="LandingPage">
-      {introVisible ? (
-    <Intro />
-      ) : (
-        <h1>Don't get fired</h1>
-      )}
+      {introVisible ? <Intro /> : <h1>Don't get fired</h1>}
     </div>
   );
 };
