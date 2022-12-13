@@ -17,7 +17,7 @@ const Quiz = () => {
   const [currentQuestion, setCurrentQuestion] = useState();
 
   const nextQuestion = () => {
-    setCurrentQuestion++;
+    setCurrentQuestion(currentQuestion + 1);
     console.log("Correct!");
   };
 
@@ -29,16 +29,58 @@ const Quiz = () => {
   return (
     <div className="Quiz">
       {introVisible && <Intro />}
-      {currentQuestion && (
-        <QuizCard
-          title="The Grammys"
-          question="Tomorrow is the biggest award show of the year. Burna Boy needs an opinion on whether to drink a smoothie or have a heavy breakfast."
-          optionOne="Right answer"
-          optionOneClicked={nextQuestion}
-          optionTwo="Wrong answer"
-          optionTwoClicked={showFiredScreen}
-        />
-      )}
+
+      {(() => {
+        switch (currentQuestion) {
+          case 1:
+            return (
+              <QuizCard
+                title="The Grammys"
+                question="Tomorrow is the biggest award show of the year. Burna Boy needs an opinion on whether to drink a smoothie or have a heavy breakfast."
+                optionOne="Right answer"
+                optionOneClicked={nextQuestion}
+                optionTwo="Wrong answer"
+                optionTwoClicked={showFiredScreen}
+              />
+            );
+          case 2:
+            return (
+              <QuizCard
+                title="The VMAs"
+                question="Tomorrow is the biggest award show of the year. Burna Boy needs an opinion on whether to drink a smoothie or have a heavy breakfast."
+                optionOne="Right answer"
+                optionOneClicked={nextQuestion}
+                optionTwo="Wrong answer"
+                optionTwoClicked={showFiredScreen}
+              />
+            );
+          case 3:
+            return (
+              <QuizCard
+                title="The Soul Trains"
+                question="Tomorrow is the biggest award show of the year. Burna Boy needs an opinion on whether to drink a smoothie or have a heavy breakfast."
+                optionOne="Right answer"
+                optionOneClicked={nextQuestion}
+                optionTwo="Wrong answer"
+                optionTwoClicked={showFiredScreen}
+              />
+            );
+          case 4:
+            return (
+              <QuizCard
+                title="The Headies"
+                question="Tomorrow is the biggest award show of the year. Burna Boy needs an opinion on whether to drink a smoothie or have a heavy breakfast."
+                optionOne="Right answer"
+                optionOneClicked={nextQuestion}
+                optionTwo="Wrong answer"
+                optionTwoClicked={showFiredScreen}
+              />
+            );
+
+          default:
+            return null;
+        }
+      })()}
 
       {currentQuestion === "" && (
         <>
