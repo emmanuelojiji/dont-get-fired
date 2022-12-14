@@ -8,7 +8,7 @@ const ChoosePage = () => {
   return (
     <div className="ChoosePage">
       <header>
-        <span>Edit</span>
+        <span className="edit">Edit</span>
         <img src={write_new} className="write-new-icon" />
       </header>
       <h1 className="messages-heading">Messages</h1>

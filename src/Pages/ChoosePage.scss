@@ -1,6 +1,5 @@
 @import "../global.scss";
 
-
 .ChoosePage {
   width: 100%;
   height: 100vh;
@@ -28,6 +27,11 @@ header {
   margin-bottom: 20px;
 }
 
-.write-new-icon{
-    width: 30px;
+.write-new-icon {
+  width: 30px;
+}
+
+.edit {
+  color: #3478f6;
+  font-size: 18px;
 }
