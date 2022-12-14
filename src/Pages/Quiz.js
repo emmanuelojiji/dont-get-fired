@@ -1,7 +1,6 @@
 import "./Quiz.scss";
 import { useEffect, useState } from "react";
 import QuizCard from "../Components/QuizCard";
-import { Link } from "react-router-dom";
 import Intro from "../Components/Intro";
 
 const Quiz = () => {
