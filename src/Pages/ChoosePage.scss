@@ -11,10 +11,15 @@ header {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
   padding-top: 10px;
   padding-bottom: 20px;
+  position: fixed;
+  margin-left: -20px;
 }
 
-.messages-heading{
-    margin-bottom: 15px;
+.messages-heading {
+  padding-top: 50px;
+  margin-bottom: 20px;
 }

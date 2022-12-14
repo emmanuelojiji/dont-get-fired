@@ -1,7 +1,9 @@
-import "./Avatar.scss"
+import "./Avatar.scss";
 
-const Avatar = () => {
-  return <div className="Avatar"></div>;
+const Avatar = ({ avatarImage }) => {
+  return (
+    <div className="Avatar" style={{ backgroundImage: avatarImage }}></div>
+  );
 };
 
 export default Avatar;

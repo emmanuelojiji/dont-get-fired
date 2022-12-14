@@ -1,6 +1,7 @@
 import "./ChoosePage.scss";
 import { useState } from "react";
 import MessageCard from "../Components/MessageCard";
+import burna_boy_image from "../Media/burna.jpeg";
 
 const ChoosePage = () => {
   const [introVisible, setIntroVisible] = useState(false);
@@ -12,9 +13,11 @@ const ChoosePage = () => {
         <span>Write Icon</span>
       </header>
       <h1 className="messages-heading">Messages</h1>
-      <MessageCard/>
-      <MessageCard/>
-      <MessageCard/>
+      <MessageCard
+        avatarImage={`url(${burna_boy_image})`}
+      />
+      <MessageCard />
+      <MessageCard />
     </div>
   );
 };

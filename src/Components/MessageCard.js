@@ -1,11 +1,11 @@
 import Avatar from "./Avatar";
 import "./MessageCard.scss";
 
-const MessageCard = () => {
+const MessageCard = ({avatarImage}) => {
   return (
     <div className="message-card">
       <div className="message-card-left">
-        <Avatar />
+        <Avatar avatarImage={avatarImage} />
         <div className="name-message">
           <span className="contact-name">Burna Boy</span>
           <span className="message-preview">
