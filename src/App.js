@@ -7,9 +7,8 @@ import ChoosePage from "./Pages/ChoosePage";
 function App() {
   return (
     <Routes>
-      <Route path="/" element={<LandingPage />} />
       <Route path="/quiz" element={<Quiz />} />
-      <Route path="/choose" element={<ChoosePage />} />
+      <Route path="/" element={<ChoosePage />} />
     </Routes>
   );
 }
