@@ -13,8 +13,20 @@
 .message-card-left {
   display: flex;
   gap: 10px;
+  margin-left: 10px;
 }
 
-.contact-name{
-    font-weight: bold;
+.contact-name {
+  font-weight: bold;
+}
+
+.unread-circle {
+  height: 10px;
+  width: 10px;
+  background: #3276f0;
+  border-radius: 100%;
+  align-self: center;
+  display: none;
+  position: absolute;
+  margin-left: -10px;
 }

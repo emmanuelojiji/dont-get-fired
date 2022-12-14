@@ -15,6 +15,7 @@ const ChoosePage = () => {
       <h1 className="messages-heading">Messages</h1>
       <MessageCard
         avatarImage={`url(${burna_boy_image})`}
+        unread_Circle_Display="block"
       />
       <MessageCard />
       <MessageCard />

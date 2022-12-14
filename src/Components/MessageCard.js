@@ -1,9 +1,13 @@
 import Avatar from "./Avatar";
 import "./MessageCard.scss";
 
-const MessageCard = ({avatarImage}) => {
+const MessageCard = ({ avatarImage, unread_Circle_Display }) => {
   return (
     <div className="message-card">
+      <div
+        className="unread-circle"
+        style={{ display: unread_Circle_Display }}
+      ></div>
       <div className="message-card-left">
         <Avatar avatarImage={avatarImage} />
         <div className="name-message">
