@@ -26,6 +26,10 @@ header {
   padding-top: 60px;
   margin-bottom: 10px;
   font-family:'SF UI Display Bold';
+  position: fixed;
+  width: 100%;
+  background: white;
+  z-index: 2;
 }
 
 .write-new-icon {
@@ -35,4 +39,9 @@ header {
 .edit {
   color: #3478f6;
   font-size: 18px;
+}
+
+
+.messages-heading-pusher{
+    height: 107px;
 }

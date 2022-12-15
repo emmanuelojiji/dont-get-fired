@@ -11,7 +11,9 @@ const ChoosePage = () => {
         <span className="edit">Edit</span>
         <img src={write_new} className="write-new-icon" />
       </header>
+      
       <h1 className="messages-heading">Messages</h1>
+      <div className="messages-heading-pusher"></div>
       <MessageCard
         avatarImage={`url(${burna_boy_image})`}
         contact_name="John"
@@ -23,6 +25,16 @@ const ChoosePage = () => {
         message="This is a test message but it has been read."
       />
       <MessageCard contact_name="Laura" />
+      <MessageCard/>
+      <MessageCard/>
+      <MessageCard/>
+      <MessageCard/>
+      <MessageCard/>
+      <MessageCard/>
+      <MessageCard/>
+      <MessageCard/>
+      <MessageCard/>
+      <MessageCard/>
     </div>
   );
 };
