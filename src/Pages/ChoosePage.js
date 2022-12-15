@@ -13,7 +13,7 @@ const ChoosePage = () => {
       </header>
       
       <h1 className="messages-heading">Messages</h1>
-      <div className="messages-heading-pusher"></div>
+      
       <MessageCard
         avatarImage={`url(${burna_boy_image})`}
         contact_name="John"
