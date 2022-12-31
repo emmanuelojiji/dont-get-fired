@@ -1,14 +1,13 @@
 import "./App.scss";
 import { Routes, Route } from "react-router-dom";
 import Quiz from "./Pages/Quiz";
-import LandingPage from "./Pages/LandingPage";
-import ChoosePage from "./Pages/ChoosePage";
+import Intro from "./Components/Intro";
 
 function App() {
   return (
     <Routes>
       <Route path="/quiz" element={<Quiz />} />
-      <Route path="/" element={<ChoosePage />} />
+      <Route path="/" element={<Intro />} />
     </Routes>
   );
 }
